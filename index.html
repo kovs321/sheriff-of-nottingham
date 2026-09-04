@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#050806" />
+    <meta name="theme-color" content="#090706" />
     <meta name="description" content="A character archive dedicated to the Sheriff of Nottingham from Disney's Robin Hood." />
     <title>The Sheriff — Nottingham Archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,10 +13,20 @@
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
+    <aside class="theme-picker" aria-label="Choose a site design">
+      <button class="theme-toggle" type="button" aria-expanded="true"><span>✦</span> Choose style</button>
+      <div class="theme-options">
+        <button type="button" data-set-theme="knight"><b>01</b><span>Pixel Knight<small>Dark RPG</small></span></button>
+        <button type="button" data-set-theme="parchment"><b>02</b><span>Royal Scroll<small>Illuminated archive</small></span></button>
+        <button type="button" data-set-theme="dungeon"><b>03</b><span>Dungeon OS<small>Green terminal</small></span></button>
+        <button type="button" data-set-theme="tapestry"><b>04</b><span>Tapestry<small>Crimson &amp; gold</small></span></button>
+        <button type="button" data-set-theme="wanted"><b>05</b><span>Wanted<small>Outlaw poster</small></span></button>
+      </div>
+    </aside>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Nottingham Archive home">
-        <span class="badge" aria-hidden="true">✦</span>
-        <span>NOTTINGHAM<br /><i>ARCHIVE</i></span>
+        <img class="brand-mark" src="/1.jpg" alt="" />
+        <span>NOTTINGHAM<br /><i>ROYAL RECORDS</i></span>
       </a>
       <nav aria-label="Main navigation">
         <a class="active" href="#profile">Profile</a>
@@ -24,14 +34,15 @@
         <a href="#record">Record</a>
       </nav>
       <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-      <div class="status"><span></span> Royal authority active</div>
+      <div class="status"><span></span> By order of the crown</div>
     </header>
 
     <main id="top">
       <section class="hero" id="profile">
+        <div class="battlements" aria-hidden="true"></div>
         <div class="forest" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
         <div class="hero-copy">
-          <p class="eyebrow reveal">Royal case file · 1973</p>
+          <p class="eyebrow reveal">Royal bestiary · Entry XXI</p>
           <h1 class="reveal">THE SHERIFF<br /><span>OF NOTTINGHAM</span></h1>
           <p class="hero-description reveal">The law has teeth in Nottingham. Prince John’s grinning tax collector—and Robin Hood’s most persistent adversary.</p>
           <div class="hero-actions reveal">
@@ -42,10 +53,10 @@
         <figure class="portrait reveal">
           <div class="portrait-frame">
             <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-            <img src="/sheriff.jpg" alt="The Sheriff of Nottingham from Disney's Robin Hood" />
+            <img src="/1.jpg" alt="Pixel portrait of the Sheriff of Nottingham" />
             <div class="scan"></div>
           </div>
-          <figcaption><span>SUBJECT 021</span><span>GREY WOLF</span></figcaption>
+          <figcaption><span>CLASS: ROYAL ENFORCER</span><span>GREY WOLF</span></figcaption>
         </figure>
         <div class="scroll-cue" aria-hidden="true">SCROLL TO INVESTIGATE <span></span></div>
       </section>
@@ -81,13 +92,13 @@
       </section>
 
       <section class="quote">
-        <div class="star-mark">✦</div>
+        <div class="star-mark">⚔</div>
         <blockquote>“Every town has its ups and downs.<br />Sometimes the ups outnumber the downs…”</blockquote>
         <p>— ALAN-A-DALE, ROBIN HOOD</p>
       </section>
     </main>
 
-    <footer><a class="brand" href="#top"><span class="badge">✦</span><span>NOTTINGHAM<br /><i>ARCHIVE</i></span></a><p>A fan-made character study · Disney’s Robin Hood (1973)</p><a href="#top">BACK TO TOP ↑</a></footer>
+    <footer><a class="brand" href="#top"><img class="brand-mark" src="/1.jpg" alt="" /><span>NOTTINGHAM<br /><i>ROYAL RECORDS</i></span></a><p>A fan-made character study · Disney’s Robin Hood (1973)</p><a href="#top">BACK TO TOP ↑</a></footer>
     <script type="module" src="/script.js"></script>
   </body>
 </html>
