@@ -1,24 +1,5 @@
 const header = document.querySelector('.site-header');
 const menu = document.querySelector('.menu');
-const themePicker = document.querySelector('.theme-picker');
-const themeToggle = document.querySelector('.theme-toggle');
-const themeButtons = [...document.querySelectorAll('[data-set-theme]')];
-
-const savedTheme = localStorage.getItem('nottingham-theme') || 'knight';
-document.body.dataset.theme = savedTheme;
-themeButtons.forEach((button) => button.classList.toggle('selected', button.dataset.setTheme === savedTheme));
-
-themeToggle.addEventListener('click', () => {
-  const collapsed = themePicker.classList.toggle('collapsed');
-  themeToggle.setAttribute('aria-expanded', String(!collapsed));
-});
-
-themeButtons.forEach((button) => button.addEventListener('click', () => {
-  const theme = button.dataset.setTheme;
-  document.body.dataset.theme = theme;
-  localStorage.setItem('nottingham-theme', theme);
-  themeButtons.forEach((item) => item.classList.toggle('selected', item === button));
-}));
 
 menu.addEventListener('click', () => {
   const open = header.classList.toggle('open');
